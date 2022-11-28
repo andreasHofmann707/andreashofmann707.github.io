@@ -1,0 +1,189 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background: #2085ca;
+}
+
+.background.red {
+    background: #851218;
+}
+
+
+.container {
+    position: relative;
+}
+
+.lotto-wrapper {
+    position: relative;
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10%;
+}
+
+.tablist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-tab {
+    background-color: white;
+    border: none;
+    width: 50%;
+    font-size: medium;
+    font-weight: bold;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+button[role="tab"] > img, button[role="tab"] > span {
+    vertical-align: middle;
+}
+
+button[aria-selected="false"] {
+    background: rgb(211, 211, 211);
+}
+
+button[aria-selected="false"] > img{
+    filter: grayscale(100%);
+}
+
+button[aria-selected="true"] {
+    background: rgb(255, 255, 255);
+}
+
+button[role="tab"]:first-child {
+    border-top-left-radius: 10px;
+}
+
+button[role="tab"]:last-child {
+    border-top-right-radius: 10px;
+}
+
+.logo-picture {
+    height: 35px;
+    width: 70px;
+}
+
+.tab-content {
+    padding: 35px 40px 40px 40px;
+}
+
+.lotto-title {
+    font-size: 26pt;
+    margin-bottom: -10px;
+}
+
+.numbers-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-size: 16pt;
+    font-weight: bold;
+    width: 100%;
+}
+
+.number-info-1 {
+    width: 40%;
+}
+
+.number-info-2 {
+    width: 40%;
+}
+
+.button-wrapper {
+    margin-top: 50px;
+}
+
+.btn {
+    display: inline-flex;
+    background-color: #2d3e51;
+    padding: 6px 10px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    font-size: 10t;
+    letter-spacing: 0.1px;
+    font-weight: 540;
+}
+
+.lotto-numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2;
+    width: 100%;
+}
+
+.number-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.lotto-numbers-normal, .lotto-numbers-special {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
+.number:first-child {
+    margin-left: 0px;
+}
+
+.number {
+    margin-left: 5px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.number.normal {
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(228,228,228,1) 100%);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #d9d9d9;
+}
+
+.number.special.euro-millions {
+    background: #feda29;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    margin-left: 0px;
+    margin-top: -10px;
+    clip-path: polygon(50% 3%, 61% 35%, 95% 36%, 68% 57%, 76% 88%, 50% 70%, 24% 88%, 32% 57%, 5% 36%, 39% 35%);
+}
+
+.number.special.swiss-lotto {
+    background: linear-gradient(135deg, rgb(252, 222, 72) 0%, rgb(255, 225, 76) 45%, rgba(214, 184, 34, 1) 100%);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #d9d9d9;
+}
+
+.button-wrapper-delete {
+    line-height: 45px;
+    margin-left: -25%;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:ital,wght@1,300&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Lotto</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="lotto-wrapper">
+          <div class="tabs">
+            <div class="tablist" role="tablist">
+              <button
+                role="tab"
+                aria-selected="true"
+                id="euro-millions"
+                class="btn-tab"
+              >
+                <img
+                  src="./img/euro-millions-logo.svg"
+                  alt="Euro Millions Logo"
+                  class="logo-picture"
+                />
+                <span>Euro Millions</span>
+              </button>
+              <button
+                role="tab"
+                aria-selected="false"
+                id="swiss-lotto"
+                class="btn-tab"
+              >
+                <img
+                  src="./img/swiss-lotto-logo-1-no-background.png"
+                  alt="Swiss Lotto Logo"
+                  class="logo-picture"
+                />
+                <span>Swiss Lotto</span>
+              </button>
+            </div>
+            <div class="tab-content">
+              <div
+                role="tabpanel"
+                class="euro-millions"
+                aria-labelledby="euro-millions"
+              >
+                <h2 class="lotto-title">Euro Millions</h2>
+                <div class="numbers-info-wrapper">
+                  <p class="number-info-1">5 Numbers (1 - 50)</p>
+                  <p class="number-info-2">2 Stars (1 - 12)</p>
+                </div>
+                <div class="lotto-numbers-wrapper euro-millions"></div>
+                <div class="button-wrapper euro-millions">
+                  <button class="btn btn-add-numbers">
+                    <img src="./img/outline_add_white_24dp.png" alt="" />
+                    More Numbers
+                  </button>
+                  <button class="btn btn-new-numbers">
+                    <img src="./img/outline_cached_white_24dp.png" alt="" />
+                    New Numbers
+                  </button>
+                </div>
+              </div>
+              <div
+                role="tabpanel"
+                class="swiss-lotto"
+                aria-labelledby="swiss-lotto"
+                hidden
+              >
+                <h2 class="lotto-title">Swiss Lotto</h2>
+                <div class="numbers-info-wrapper">
+                  <p class="number-info-1">6 Numbers (1 - 42)</p>
+                  <p class="number-info-2">2 Lucky number (1 - 6)</p>
+                </div>
+                <div class="lotto-numbers-wrapper swiss-lotto"></div>
+                <div class="button-wrapper swiss-lotto">
+                  <button class="btn btn-add-numbers">
+                    <img src="./img/outline_add_white_24dp.png" alt="" />
+                    More Numbers
+                  </button>
+                  <button class="btn btn-new-numbers">
+                    <img src="./img/outline_cached_white_24dp.png" alt="" />
+                    New Numbers
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
